@@ -1,0 +1,8 @@
+fig_parameters:
+  plt.colors: blue
+  plt.title: Most starred GitHub repos
+  plt.xlabel: Total stars
+  plt.ylabel: Repo name
+    figsize: (10,6)
+
+save_path: Github_starred_repos.png
