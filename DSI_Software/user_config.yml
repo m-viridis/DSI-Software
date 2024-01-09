@@ -1,2 +1,0 @@
-general:
-  usertoken = userdata.get('utordsi') #EDIT THIS VALUE TO MATCH YOUR OWN GITHUB API TOKEN
