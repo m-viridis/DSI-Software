@@ -10,7 +10,7 @@ from google.colab import userdata #for personal testing
 #import yaml user_config; extract user token
 
 import yaml
-with open('user_config.yml', 'r') as user_config:
+with open('/configs/user_config.yml', 'r') as user_config:
   ghtoken = yaml.safe_load(user_config)
 
 usertoken = list(ghtoken.values())[0]
