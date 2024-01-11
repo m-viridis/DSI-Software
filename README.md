@@ -13,12 +13,12 @@ For more instructions on generating your own Github API token, please see https:
 
 #RUNNING ANALYSIS MODULE INSTRUCTIONS<br>
 
-You may use the following code to determine the mean of total stars for the top starred GitHub repos:
+You may use the following code to determine the mean of total stars for the top starred GitHub repos:<br>
 
-analysis = Analysis(usertoken)
-Analysis.load_data(analysis)
-stars = Analysis.load_data(analysis)
-Analysis.compute_analysis(stars)
+analysis = Analysis(usertoken)<br>
+Analysis.load_data(analysis)<br>
+stars = Analysis.load_data(analysis)<br>
+Analysis.compute_analysis(stars)<br>
 
 #UNIT TEST <br>
 
