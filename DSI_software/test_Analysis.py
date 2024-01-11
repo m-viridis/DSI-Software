@@ -1,8 +1,11 @@
 import pytest
 import Analysis
-from user_config import usertoken
+import yaml
 
-test_names = []
+with open('configs\user_config.yml', 'r') as user_config:
+  ghtoken = yaml.safe_load(user_config)
+usertoken = list(ghtoken.values())[0]
+
 test_stars = []
 star = ['3', '6'] #use variable to test error message
 
@@ -14,7 +17,6 @@ def test_load_data() -> dict:
   #return res_json
 
   for item in res_dicts:
-    test_names.append(item['name'])
     test_stars.append(item['stargazers_count'])
     pass
 
