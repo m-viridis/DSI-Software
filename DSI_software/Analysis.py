@@ -3,11 +3,14 @@ import json
 import numpy as np
 from typing import Any, Optional
 import yaml
+import os
 from google.colab import userdata #for personal testing
 
 # n.b. this module will not read in system_config because we will not be plotting anything with this package
 # however, there is a system_config.yml file in the package for you to review
 # to see homework related plotting of GitHub data, please see https://github.com/m-viridis/DSI-SQL/blob/main/DSI-HomeworkSummary-2024-01-16.ipynb 
+
+print(os.getcwd())
 
 # import and read user_config with yaml to extract user token as a global variable
 with open('..\user_config.yml', 'r') as user_config:
