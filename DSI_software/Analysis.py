@@ -10,7 +10,7 @@ from google.colab import userdata #for personal testing
 # to see homework related plotting of GitHub data, please see https://github.com/m-viridis/DSI-SQL/blob/main/DSI-HomeworkSummary-2024-01-16.ipynb 
 
 # import and read user_config with yaml to extract user token as a global variable
-with open('configs\user_config.yml', 'r') as user_config:
+with open(r"configs\user_config.yml") as user_config:
   ghtoken = yaml.safe_load(user_config)
 
 usertoken = list(ghtoken.values())[0]
