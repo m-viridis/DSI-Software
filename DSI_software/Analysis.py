@@ -13,7 +13,7 @@ from google.colab import userdata #for personal testing
 print(os.getcwd())
 
 # import and read user_config with yaml to extract user token as a global variable
-with open('..\user_config.yml', 'r') as user_config:
+with open(r"../configs/user_config.yml") as user_config:
   ghtoken = yaml.safe_load(user_config)
 
 usertoken = list(ghtoken.values())[0]
