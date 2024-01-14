@@ -7,13 +7,13 @@ To review the course homework including a previous version of Analysis that incl
 
 #API TOKEN INSTRUCTIONS<br>
 
-In order to run this package, you need to manually edit the value of user_config.yml to include your personal GitHub API Token. It should appear to be a long alphanumeric string. <br>
-
-For more instructions on generating your own Github API token, please see https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens<br>
+This program requires your own personal GitHub API token. For more instructions on generating your own token, please see https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens<br>
 
 #RUNNING ANALYSIS.PY MODULE INSTRUCTIONS<br>
 
-You may use the following code to determine the mean of total stars for the top starred GitHub repos:<br>
+Important!! In order to run this package, you need to manually edit the value of user_config.yml to include your personal GitHub API Token.<br>
+
+Once you have edited user_config.yml, you may use the following code to determine the mean of total stars for the top starred GitHub repos:<br>
 
 analysis = Analysis(usertoken)<br>
 Analysis.load_data(analysis)<br>
